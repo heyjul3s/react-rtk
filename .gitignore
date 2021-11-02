@@ -1,0 +1,38 @@
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+
+# NodeJS modules folder
+node_modules
+
+# npm debug log
+npm-debug.log
+
+# vs code
+.vscode
+.editorconfig
+
+# eslint
+.eslintcache
+
+# misc
+.editorconfig
+.cache-loader
+/build/
+/dist/
+coverage
+.docz
+
+# OSX
+.DS_Store
+*.DS_Store
+
+# Yarn
+yarn-error.log
