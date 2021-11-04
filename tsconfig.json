@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/api": ["src/api/*"],
+      "@/components": ["src/components/*"],
+      "@/hooks": ["src/hooks/*"],
+      "@/pages": ["src/pages/*"],
+      "@/reducers": ["src/reducers/*"],
+      "@/theme": ["src/theme/*"],
+      "@/utils": ["src/utils/*"]
+    },
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": ["es7", "dom"],
+    "target": "es5",
+    "removeComments": false,
+    "strict": false,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "newLine": "LF",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "strictNullChecks": true,
+    "noFallthroughCasesInSwitch": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "importsNotUsedAsValues": "preserve"
+  },
+  "include": ["src/**/*"],
+  "exclude": [".git", "coverage", "build", "dist", "node_modules", "webpack"]
+}
