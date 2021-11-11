@@ -25,14 +25,21 @@ npm-debug.log
 # misc
 .editorconfig
 .cache-loader
-/build/
-/dist/
+build/
+dist/
 coverage
-.docz
 
 # OSX
 .DS_Store
 *.DS_Store
 
 # Yarn
+.pnp.*
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 yarn-error.log
