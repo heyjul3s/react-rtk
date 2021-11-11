@@ -14,7 +14,7 @@ const baseOptions = {
       '@/components': path.resolve(__dirname, '../../src/components/'),
       '@/hooks': path.resolve(__dirname, '../../src/hooks/'),
       '@/pages': path.resolve(__dirname, '../../src/pages/'),
-      '@/reducers': path.resolve(__dirname, '../../src/reducers/'),
+      '@/store': path.resolve(__dirname, '../../src/store/'),
       '@/theme': path.resolve(__dirname, '../../src/theme/'),
       '@/utils': path.resolve(__dirname, '../../src/utils/')
     }

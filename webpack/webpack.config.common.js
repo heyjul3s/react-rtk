@@ -27,7 +27,8 @@ module.exports = (env) => {
     plugins: [
       utils.defineEnv({
         'process.env': {
-          NODE_ENV: JSON.stringify(env.NODE_ENV)
+          NODE_ENV: JSON.stringify(env.NODE_ENV),
+          API: '"https://jsonplaceholder.typicode.com"'
         }
       }),
       web.HTML(settings.HTML[env.NODE_ENV]),

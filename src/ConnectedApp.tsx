@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { ChakraProvider } from '@chakra-ui/react';
 import { HelmetProvider } from 'react-helmet-async';
 
-import { configureAppStore } from './store';
+import { configureAppStore } from '@/store/store';
 import { App } from './App';
 import { theme } from '@/theme';
 
