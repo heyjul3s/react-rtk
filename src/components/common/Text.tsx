@@ -8,19 +8,12 @@ type TTextsProps = {
 const Typography = {
   LargeP({
     children,
-    isTruncated,
     noOfLines,
     as = 'p',
     ...props
   }: TTextsProps): React.ReactElement {
     return (
-      <Text
-        as={as}
-        variant="largeP"
-        isTruncated={isTruncated}
-        noOfLines={noOfLines}
-        {...props}
-      >
+      <Text as={as} variant="largeP" noOfLines={noOfLines} {...props}>
         {children}
       </Text>
     );
@@ -28,19 +21,12 @@ const Typography = {
 
   P({
     children,
-    isTruncated,
     noOfLines,
     as = 'p',
     ...props
   }: TTextsProps): React.ReactElement {
     return (
-      <Text
-        as={as}
-        variant="p"
-        isTruncated={isTruncated}
-        noOfLines={noOfLines}
-        {...props}
-      >
+      <Text as={as} variant="p" noOfLines={noOfLines} {...props}>
         {children}
       </Text>
     );
@@ -48,19 +34,12 @@ const Typography = {
 
   SmallP({
     children,
-    isTruncated,
     noOfLines,
     as = 'p',
     ...props
   }: TTextsProps): React.ReactElement {
     return (
-      <Text
-        as={as}
-        variant="smallP"
-        isTruncated={isTruncated}
-        noOfLines={noOfLines}
-        {...props}
-      >
+      <Text as={as} variant="smallP" noOfLines={noOfLines} {...props}>
         {children}
       </Text>
     );
