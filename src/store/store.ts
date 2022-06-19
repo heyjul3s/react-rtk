@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import { forceReducerReload } from 'redux-injectors';
-import { createReducer } from './reducers';
+import { rootReducer } from './reducers';
 
-const store = configureStore({
-  reducer: createReducer(),
+import type { Store } from '@reduxjs/toolkit';
+
+const store: Store = configureStore({
+  reducer: rootReducer,
   devTools: process.env.NODE_ENV !== 'production'
 });
 
@@ -19,11 +21,11 @@ export function configureAppStore() {
 
 export type AppDispatch = typeof store.dispatch;
 
-export type RootState = ReturnType<typeof store.getState>;
-
 export type AppThunk<ReturnType = void> = ThunkAction<
   ReturnType,
   RootState,
   unknown,
   Action<string>
 >;
+
+export type RootState = ReturnType<typeof store.getState>;
