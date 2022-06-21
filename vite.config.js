@@ -1,9 +1,9 @@
+import manifest from './manifest.json';
+import react from '@vitejs/plugin-react';
 import * as path from 'path';
 import { defineConfig } from 'vite';
 import { createHtmlPlugin } from 'vite-plugin-html';
-import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
-import manifest from './manifest.json';
 
 var DIR_PATH = path.join.bind(null, __dirname);
 
@@ -44,7 +44,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
-      '@/api': DIR_PATH('src/api/*'),
+      '@/requests': DIR_PATH('src/requests/*'),
       '@/components': DIR_PATH('src/components/*'),
       '@/hooks': DIR_PATH('src/hooks/*'),
       '@/pages': DIR_PATH('src/pages/*'),
