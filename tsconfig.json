@@ -34,9 +34,18 @@
     "strictNullChecks": true,
     "noFallthroughCasesInSwitch": true,
     "suppressImplicitAnyIndexErrors": true,
-    "importsNotUsedAsValues": "preserve"
+    "importsNotUsedAsValues": "preserve",
+    "skipLibCheck": true
   },
   "include": ["src"],
-  "exclude": [".git", "coverage", "build", "dist", "node_modules", "webpack"],
+  "exclude": [
+    ".git",
+    "coverage",
+    "build",
+    "dist",
+    "node_modules",
+    "tests",
+    "cypress"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
