@@ -2,6 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "@/*": ["src/*"],
       "@/api": ["src/api/*"],
       "@/components": ["src/components/*"],
       "@/hooks": ["src/hooks/*"],
@@ -35,6 +36,7 @@
     "suppressImplicitAnyIndexErrors": true,
     "importsNotUsedAsValues": "preserve"
   },
-  "include": ["src/**/*"],
-  "exclude": [".git", "coverage", "build", "dist", "node_modules", "webpack"]
+  "include": ["src"],
+  "exclude": [".git", "coverage", "build", "dist", "node_modules", "webpack"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
