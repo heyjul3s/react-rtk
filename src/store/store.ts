@@ -1,5 +1,4 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import { forceReducerReload } from 'redux-injectors';
 import { rootReducer } from './reducers';
 
 import type { Store } from '@reduxjs/toolkit';
@@ -10,12 +9,6 @@ const store: Store = configureStore({
 });
 
 export function configureAppStore() {
-  if (module.hot) {
-    module.hot.accept('./reducers', () => {
-      forceReducerReload(store);
-    });
-  }
-
   return store;
 }
 

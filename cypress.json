@@ -1,7 +1,6 @@
 {
   "baseUrl": "http://localhost:3000",
   "watchForFileChanges": true,
-  "reporter": "mochawesome",
   "testFiles": "**/*.feature",
   "reporterOptions": {
     "reportDir": "cypress/results",
@@ -12,7 +11,7 @@
   },
   "viewportWidth": 1280,
   "viewportHeight": 1024,
-  "projectId": "sample",
+  "projectId": "react-rtkq",
   "chromeWebSecurity": false,
   "video": false
 }
