@@ -38,21 +38,6 @@ To get started:
 
 For full list of scripts, please refer to the root package.json file
 
-## ENV
-
-### PUBLIC ENV
-
-Environment files will be divided into 2 eg. `.env.development` and `.env.production`. These files should contain the following as an example:
-
-- NEXT_PUBLIC_APP_NAME=My Application Name
-- NEXT_PUBLIC_APP_PREFIX=MAN
-- NEXT_PUBLIC_BASE_URL=https://www.someurl.com
-- NEXT_PUBLIC_GA_TRACKING_ID=123456
-
-**Note that prefix `NEXT_PUBLIC` is required to make it available in the browser.**
-
-And remember: **DO NOT COMMIT NOR PUSH THESE ENV FILES WITH SECRETS!** Finally, refer to [NextJS Env Variables Docs](https://nextjs.org/docs/basic-features/environment-variables) for further information if required.
-
 ## File Structure
 
 ### Overall Structure
