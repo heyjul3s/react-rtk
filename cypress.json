@@ -1,7 +1,6 @@
 {
   "baseUrl": "http://localhost:3000",
   "watchForFileChanges": true,
-  "reporter": "mochawesome",
   "testFiles": "**/*.feature",
   "reporterOptions": {
     "reportDir": "cypress/results",
