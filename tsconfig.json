@@ -3,10 +3,9 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "declaration": true,
-    "jsx": "react",
-    "target": "ESNext",
     "forceConsistentCasingInFileNames": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "jsx": "react-jsx",
     "importsNotUsedAsValues": "preserve",
     "module": "ESNext",
     "moduleResolution": "node",
@@ -35,7 +34,8 @@
     "skipLibCheck": true,
     "strict": false,
     "strictNullChecks": true,
-    "suppressImplicitAnyIndexErrors": true
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "ESNext"
   },
   "include": ["src"],
   "exclude": [
