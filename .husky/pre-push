@@ -1,6 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-yarn tsc && tsc-alias
+yarn tsc && tsc-alias -p tsconfig.json
 yarn lint
 yarn test:jest
