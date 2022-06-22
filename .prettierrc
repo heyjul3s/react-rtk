@@ -9,6 +9,5 @@
     "^[./]"
   ],
   "importOrderCaseInsensitive": true,
-  "importOrderSeparation": true,
   "importOrderSortSpecifiers": true
 }
