@@ -4,17 +4,23 @@ A React + Redux Toolkit PWA kit powered by ViteJS, Redux Toolkit, Chakra UI, Cyp
 
 At a glance:
 
-| Dependency                                                       | Version |
-| ---------------------------------------------------------------- | ------- |
-| [react](https://reactjs.org/docs/getting-started.html)           | 18.2.0  |
-| [@axe-core/react](https://www.npmjs.com/package/@axe-core/react) | 4.4.3   |
-| [@chakra-ui/react](https://chakra-ui.com/docs/getting-started)   | 2.2.1   |
-| [typescript](https://www.typescriptlang.org/docs/)               | 4.7.4   |
-| [axios](https://axios-http.com/)                                 | 0.27.2  |
-| [redux-toolkit](https://redux-toolkit.js.org/api/configureStore) | 0.7.3   |
-| [react-query](https://react-query.tanstack.com/overview)         | 3.39.1  |
-| [react-hook-form](https://react-hook-form.com)                   | 7.32.2  |
-| [cypress](https://docs.cypress.io/)                              | 10.1.0  |
+| Dependency                                                          | Version |
+| ------------------------------------------------------------------- | ------- |
+| [react](https://reactjs.org/docs/getting-started.html)              | 18.2.0  |
+| [@axe-core/react](https://www.npmjs.com/package/@axe-core/react)    | 4.4.3   |
+| [@chakra-ui/react](https://chakra-ui.com/docs/getting-started)      | 2.2.1   |
+| [typescript](https://www.typescriptlang.org/docs/)                  | 4.7.4   |
+| [axios](https://axios-http.com/)                                    | 0.27.2  |
+| [redux](https://redux.js.org/introduction/getting-started)          | 4.2.0   |
+| [redux-thunk](https://github.com/reduxjs/redux-thunk)               | 2.4.1   |
+| [@reduxjs/toolkit](https://redux-toolkit.js.org/api/configureStore) | 1.8.2   |
+| [react-query](https://react-query.tanstack.com/overview)            | 3.39.1  |
+| [react-hook-form](https://react-hook-form.com)                      | 7.32.2  |
+| [cypress](https://docs.cypress.io/)                                 | 10.1.0  |
+
+Featuring
+
+- New JSX transform. Learn more [here](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html).
 
 ## Getting Started
 

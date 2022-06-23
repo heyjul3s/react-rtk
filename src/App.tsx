@@ -1,11 +1,10 @@
 import React from 'react';
+import { HelmetProvider } from 'react-helmet-async';
 import { Provider } from 'react-redux';
 import { ChakraProvider } from '@chakra-ui/react';
-import { HelmetProvider } from 'react-helmet-async';
-
 import { configureAppStore } from '@/store/store';
-import { AppRoutes } from './AppRoutes';
 import { theme } from '@/theme';
+import { AppRoutes } from './AppRoutes';
 
 export function App() {
   const store = configureAppStore();

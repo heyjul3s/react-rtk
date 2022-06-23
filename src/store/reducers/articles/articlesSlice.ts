@@ -5,7 +5,7 @@ import type { IArticlesState, TArticle } from './types';
 const initialState: IArticlesState = {
   articles: [],
   loading: false,
-  error: void 0
+  error: undefined
 };
 
 const articlesSlice = createSlice({
