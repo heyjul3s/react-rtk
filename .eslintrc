@@ -20,11 +20,13 @@
   "extends": [
     "eslint:recommended",
     "plugin:import/typescript",
+    "plugin:jsx-a11y/recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
+    "plugin:security/recommended",
     "plugin:storybook/recommended",
     "prettier"
   ],
