@@ -10,7 +10,7 @@
     "dev": "vite serve",
     "preview": "vite preview",
     "preview:https": "serve dist",
-    "test:jest": "jest --passWithNoTests -c jest.config.js",
+    "test:jest": "jest --passWithNoTests -c jest.config.ts",
     "husky:install": "husky install",
     "husky:init": "npx husky-init && yarn",
     "prepare": "husky install",
@@ -37,7 +37,8 @@
     "react-helmet-async": "^1.3.0",
     "react-redux": "^8.0.2",
     "react-router-dom": "^6.3.0",
-    "redux": "^4.2.0"
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.18.5",
@@ -92,6 +93,7 @@
     "stylelint": "^14.9.1",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended": "^8.0.0",
+    "ts-node": "^10.8.1",
     "typescript": "^4.7.4",
     "vite": "^2.9.12",
     "vite-plugin-html": "^3.2.0",
