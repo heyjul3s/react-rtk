@@ -1,8 +1,8 @@
-import axios, { AxiosRequestConfig, AxiosResponse, AxiosError } from 'axios';
+import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
 import deepExtend from 'deep-extend';
 import qs from 'qs';
 
-export async function request<Data, Error>(
+export async function request<Data, Error = any>(
   endpoint: string,
   config: AxiosRequestConfig = {}
 ): Promise<AxiosResponse<Data, AxiosError<Error>>> {

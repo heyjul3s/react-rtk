@@ -1,7 +1,6 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import { rootReducer } from './reducers';
-
+import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
 import type { Store } from '@reduxjs/toolkit';
+import { rootReducer } from './reducers';
 
 const store: Store = configureStore({
   reducer: rootReducer,
@@ -13,12 +12,11 @@ export function configureAppStore() {
 }
 
 export type AppDispatch = typeof store.dispatch;
+export type ReduxState = ReturnType<typeof store.getState>;
 
 export type AppThunk<ReturnType = void> = ThunkAction<
   ReturnType,
-  RootState,
+  ReduxState,
   unknown,
   Action<string>
 >;
-
-export type RootState = ReturnType<typeof store.getState>;

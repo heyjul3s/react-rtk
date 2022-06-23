@@ -1,7 +1,7 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { Layout, H1, P } from '@/components';
-
+import { useSelector } from 'react-redux';
+import { H1, Layout, P } from '@/components';
+import { useAppDispatch } from '@/hooks';
 import {
   getArticles,
   selectArticles,
@@ -9,7 +9,7 @@ import {
 } from '@/store/reducers/articles';
 
 export function Home() {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const articles: TArticle[] = useSelector(selectArticles);
 
   React.useEffect(() => {
@@ -25,7 +25,7 @@ export function Home() {
         {!!articles?.length &&
           articles.map((article) => {
             return (
-              <div>
+              <div key={`${article.id}`}>
                 <h2>{article.title}</h2>
                 <p>{article.body}</p>
               </div>
