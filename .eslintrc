@@ -1,36 +1,46 @@
 {
-  "ignorePatterns": ["node_modules/", "dist/"],
+  "ignorePatterns": [
+    "node_modules",
+    "*.min.*",
+    "CHANGELOG.md",
+    "dist",
+    "LICENSE*",
+    "output",
+    "coverage",
+    "public",
+    "temp",
+    "packages-lock.json",
+    "pnpm-lock.yaml",
+    "yarn.lock",
+    "__snapshots__",
+    "!.github",
+    "!.vitepress",
+    "!.vscode"
+  ],
   "extends": [
     "eslint:recommended",
+    "plugin:import/typescript",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
     "plugin:storybook/recommended",
     "prettier"
   ],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  },
-  "plugins": ["import"],
   "rules": {
-    "import/no-unresolved": "error",
-    "no-unused-vars": "off",
     "react-hooks/exhaustive-deps": 0,
+    "react/jsx-uses-react": "off",
+    "react/jsx-uses-vars": "off",
     "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
     "@typescript-eslint/ban-ts-ignore": "off",
-    "@typescript-eslint/no-unused-vars": "warn"
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-console": "warn"
   },
   "settings": {
     "react": {
-      "version": "detect"
-    },
-    "import/resolver": {
-      "typescript": {}
+      "version": "18"
     }
   }
 }
