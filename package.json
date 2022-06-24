@@ -21,7 +21,10 @@
     "lint:styled-fix": "stylelint ./src/**/*.{css,scss,js,ts,tsx} --fix",
     "storybook": "start-storybook --no-open -p 6006",
     "build-storybook": "build-storybook",
-    "browserslist-update": "npx browserslist@latest --update-db"
+    "browserslist-update": "npx browserslist@latest --update-db",
+    "pkg:add": "sh ./scripts/yarn-add.sh",
+    "pkg:del": "sh ./scripts/yarn-del.sh",
+    "pkg:install": "sh ./scripts/yarn-smart-install.sh"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.2.1",
