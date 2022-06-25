@@ -10,11 +10,9 @@ At a glance:
 | [@axe-core/react](https://www.npmjs.com/package/@axe-core/react)    | 4.4.3   |
 | [@chakra-ui/react](https://chakra-ui.com/docs/getting-started)      | 2.2.1   |
 | [typescript](https://www.typescriptlang.org/docs/)                  | 4.7.4   |
-| [axios](https://axios-http.com/)                                    | 0.27.2  |
 | [redux](https://redux.js.org/introduction/getting-started)          | 4.2.0   |
 | [redux-thunk](https://github.com/reduxjs/redux-thunk)               | 2.4.1   |
 | [@reduxjs/toolkit](https://redux-toolkit.js.org/api/configureStore) | 1.8.2   |
-| [react-query](https://react-query.tanstack.com/overview)            | 3.39.1  |
 | [react-hook-form](https://react-hook-form.com)                      | 7.32.2  |
 | [cypress](https://docs.cypress.io/)                                 | 10.1.0  |
 
