@@ -1,29 +1,22 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
 import { H1, Layout, P } from '@/components';
-import { useAppDispatch } from '@/hooks';
-import {
-  getArticles,
-  selectArticles,
-  TArticle
-} from '@/store/reducers/articles';
+import { useGetArticlesQuery } from '@/services/articles';
 
 export function Home() {
-  const dispatch = useAppDispatch();
-  const articles: TArticle[] = useSelector(selectArticles);
-
-  React.useEffect(() => {
-    dispatch(getArticles());
-  }, []);
+  const { data, isLoading, error } = useGetArticlesQuery('');
 
   return (
     <Layout>
       <H1>Welcome</H1>
       <P>Lorem Ipsum Dolor Sit Amet</P>
 
+      {isLoading && <p>Loading</p>}
+      {error && <p>Error</p>}
+
       <div>
-        {!!articles?.length &&
-          articles.map((article) => {
+        {!isLoading &&
+          !error &&
+          !!data?.length &&
+          data.map((article) => {
             return (
               <div key={`${article.id}`}>
                 <h2>{article.title}</h2>

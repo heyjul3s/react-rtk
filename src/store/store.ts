@@ -1,15 +1,16 @@
-import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
-import type { Store } from '@reduxjs/toolkit';
-import { rootReducer } from './reducers';
+import { configureStore } from '@reduxjs/toolkit';
+import type { Action, Store, ThunkAction } from '@reduxjs/toolkit';
+import { setupListeners } from '@reduxjs/toolkit/query';
+import { articlesApi } from '@/services/articles';
 
-const store: Store = configureStore({
-  reducer: rootReducer,
-  devTools: process.env.NODE_ENV !== 'production'
+export const store: Store = configureStore({
+  devTools: process.env.NODE_ENV !== 'production',
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(articlesApi.middleware),
+  reducer: {
+    [articlesApi.reducerPath]: articlesApi.reducer
+  }
 });
-
-export function configureAppStore() {
-  return store;
-}
 
 export type AppDispatch = typeof store.dispatch;
 export type ReduxState = ReturnType<typeof store.getState>;
@@ -20,3 +21,5 @@ export type AppThunk<ReturnType = void> = ThunkAction<
   unknown,
   Action<string>
 >;
+
+setupListeners(store.dispatch);
